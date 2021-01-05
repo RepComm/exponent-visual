@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  color: rgb(207, 207, 207);
+  background-color: #7d7d7d;
+  font-family: Courier, 'Courier New', monospace;
+}
+
+#editor {}
+
+#highlighter {
+  margin: 1em;
+  border: 4px dashed rgb(213, 132, 221);
+  border-radius: 1em;
+  background-color: rgba(157, 87, 130, 0.43);
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tray {
+  flex-direction: column;
+  background-color: #3e3e3e;
+}
+
+.tray-item {
+  flex-direction: column;
+  max-height: 10em;
+  background-color: rgb(34, 34, 34);
+  border-radius: 1em;
+  margin: 0.5em;
+  cursor: copy;
+}
+
+.tray-item:hover {
+  background-color: rgb(15, 15, 15);
+}
+
+.tray-item-label {
+  max-height: 1em;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: large;
+}
+
+.tray-item-image {
+  background-repeat: no-repeat;
+  background-size: contain !important;
+  margin: 1em;
+}
